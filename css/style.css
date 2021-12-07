@@ -43,8 +43,8 @@ body {
   color: #202046;
   background-image: url("../images/pattern-curve.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+  background-size: 70rem;
+  background-position: left bottom;
   font-size: 1.6rem;
   font-family: "Inter", sans-serif;
   text-rendering: optimizeSpeed;
@@ -55,7 +55,13 @@ body {
 
 .container {
   width: 90%;
-  max-width: 100rem;
+  max-width: 130rem;
+}
+@media (min-width: 1140px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .slider__wrapper-img {
@@ -68,6 +74,12 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 1140px) {
+  .slider__wrapper-img {
+    flex-basis: 240rem;
+    padding: 7rem;
+  }
+}
 .slider__wrapper-btns {
   background-color: white;
   border-radius: 5rem;
@@ -78,26 +90,46 @@ body {
 }
 @media (min-width: 810px) {
   .slider__wrapper-btns {
-    padding: 1.2rem 2rem;
-    gap: 5rem;
+    padding: 1.7rem 2rem;
+    gap: 4rem;
+  }
+}
+@media (min-width: 1140px) {
+  .slider__wrapper-btns {
+    align-self: start;
+    margin-left: 7rem;
   }
 }
 .slider__wrapper-text {
   text-align: center;
 }
 @media (min-width: 1140px) {
+  .slider__wrapper-text {
+    text-align: left;
+    align-self: center;
+    margin-right: -22rem;
+    padding: 2.5rem 2rem 2rem 10rem;
+  }
+}
+@media (min-width: 1140px) {
   .slider__wrapper-info {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1rem;
   }
 }
 
 .slider {
   margin-top: 10rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 4rem;
+}
+@media (min-width: 1140px) {
+  .slider {
+    margin-top: 5rem;
+    flex-direction: row-reverse;
+  }
 }
 .slider__img {
   width: 75%;
@@ -105,12 +137,18 @@ body {
   box-shadow: 0 5rem 7rem -5rem #202046;
   margin-top: 2.9rem;
 }
+@media (min-width: 1140px) {
+  .slider__img {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 .slider__btn {
   background: unset;
   border: 0;
 }
 .slider__btn-icon {
-  width: clamp(1rem, 2vw, 4rem);
+  width: clamp(1rem, 2vw, 1.3rem);
   transition: all 0.3s;
 }
 .slider__btn-icon:hover {
@@ -127,17 +165,25 @@ body {
   background-repeat: no-repeat;
   background-size: 6rem;
   background-position: top center;
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-size: clamp(1.8rem, 4vw, 3.4rem);
   font-weight: 300;
   line-height: 1.3;
   padding: 2.5rem 1rem 2rem 1rem;
 }
+@media (min-width: 1140px) {
+  .slider__blockquote {
+    background-size: 12rem;
+    background-position: top left 9.5rem;
+    padding: 6.5rem 0 0 0;
+    margin-bottom: 3.5rem;
+  }
+}
 .slider__name {
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
 }
 .slider__status {
   color: #babacf;
-  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 2vw, 2.2rem);
   font-weight: 500;
 }
 

@@ -2,7 +2,12 @@
 
 .container {
   width: 90%;
-  max-width: 100rem;
+  max-width: 130rem;
+
+  @media (min-width: 1140px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .slider {
@@ -18,6 +23,11 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      @media (min-width: 1140px) {
+        flex-basis: 240rem;
+        padding: 7rem;
+      }
     }
 
     &-btns {
@@ -29,20 +39,31 @@
       gap: 3rem;
 
       @media (min-width: 810px) {
-        padding: 1.2rem 2rem;
-        gap: 5rem;
+        padding: 1.7rem 2rem;
+        gap: 4rem;
+      }
+
+      @media (min-width: 1140px) {
+        align-self: start;
+        margin-left: 7rem;
       }
     }
 
     &-text {
       text-align: center;
+
+      @media (min-width: 1140px) {
+        text-align: left;
+        align-self: center;
+        margin-right: -22rem;
+        padding: 2.5rem 2rem 2rem 10rem;
+      }
     }
 
     &-info {
       @media (min-width: 1140px) {
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 1rem;
       }
     }
