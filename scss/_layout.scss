@@ -1,0 +1,50 @@
+@use './base' as *;
+
+.container {
+  width: 90%;
+  max-width: 100rem;
+}
+
+.slider {
+  &__wrapper {
+    &-img {
+      background: {
+        image: url('../images/pattern-bg.svg');
+        repeat: no-repeat;
+        size: contain;
+        position: top center;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-btns {
+      background-color: $color-secondary--light;
+      border-radius: 5rem;
+      margin-top: -2rem;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      gap: 3rem;
+
+      @media (min-width: 810px) {
+        padding: 1.2rem 2rem;
+        gap: 5rem;
+      }
+    }
+
+    &-text {
+      text-align: center;
+    }
+
+    &-info {
+      @media (min-width: 1140px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+    }
+  }
+}
