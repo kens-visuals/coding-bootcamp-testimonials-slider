@@ -4,11 +4,13 @@ const img = document.querySelector('.js-img');
 const username = document.querySelector('.js-name');
 const userStatus = document.querySelector('.js-status');
 const bloclquote = document.querySelector('.js-bloclquote');
+const wrapperBtns = document.querySelector('.js-wrapper-btns');
+const wrapperInfo = document.querySelector('.js-wrapper-info');
 const btns = document.querySelectorAll('.js-btn');
 
 const [prev, next] = btns;
 
-const data = [
+const usersData = [
   {
     img: './images/image-john.jpg',
     bloclquote: `“ If you want to lay the best foundation possible I’d recommend taking this
@@ -27,32 +29,45 @@ const data = [
   },
 ];
 
+// Helper functions
+const classAdder = (...items) =>
+  items.forEach((item) => item.classList.add('is-visible'));
+const classRemover = (...items) =>
+  items.forEach((item) => item.classList.remove('is-visible'));
+
+const setAnimations = function () {
+  const items = [
+    img,
+    bloclquote,
+    username,
+    userStatus,
+    wrapperBtns,
+    wrapperInfo,
+  ];
+
+  classRemover(...items);
+  setTimeout(() => classAdder(img, wrapperBtns), 500);
+  setTimeout(() => classAdder(bloclquote, wrapperInfo), 800);
+};
+
+// Event callbacks
 const setUserData = function () {
-  const currData = data[current];
+  const currentData = usersData[current];
 
-  img.src = currData.img;
-  //   img.classList.add('is-visible');
-  bloclquote.textContent = currData.bloclquote;
-  username.textContent = currData.username;
-  userStatus.textContent = currData.status;
+  img.src = currentData.img;
+  bloclquote.textContent = currentData.bloclquote;
+  username.textContent = currentData.username;
+  userStatus.textContent = currentData.status;
 
-  //   if (img.classList.contains('is-visible')) {
-  //     img.classList.remove('is-visible');
-  //   } else {
-  //     img.classList.add('is-visible');
-  //   }
-
-  //   setTimeout(() => img.classList.remove('is-visible'), 500);
+  setAnimations();
 
   current === 0 ? current++ : current--;
 };
 
-[prev, next].forEach((btn) =>
-  btn.addEventListener('click', () => {
-    setUserData();
-  })
-);
-
-window.addEventListener('keydown', (e) => {
+const moveWithArrows = function (e) {
   if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') setUserData();
-});
+};
+
+// Events
+[(prev, next)].forEach((btn) => btn.addEventListener('click', setUserData));
+window.addEventListener('keydown', moveWithArrows);

@@ -55,7 +55,7 @@
       @media (min-width: 1140px) {
         text-align: left;
         align-self: center;
-        margin-right: -20rem;
+        margin-right: -21rem;
         padding: 2.5rem 2rem 2rem 10rem;
         flex: 0 1 300rem;
       }
@@ -68,5 +68,17 @@
         gap: 1rem;
       }
     }
+
+    // &-btns,
+    // &-info {
+    //   opacity: 0;
+    //   visibility: hidden;
+    //   transition: all 0.5s;
+
+    //   &.is-visible {
+    //     opacity: 1;
+    //     visibility: visible;
+    //   }
+    // }
   }
 }

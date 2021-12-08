@@ -1,6 +1,6 @@
-# Frontend Mentor - PROJECT NAME Solution
+# Frontend Mentor - Coding Bootcamp Testimonials Slider Solution
 
-This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LINK).
+This is a solution to the [Coding Bootcamp Testimonials Slider Challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL).
 
 ## Table of contents
 
@@ -21,8 +21,8 @@ This is a solution to the [PROJECT NAME Challenge on Frontend Mentor](PROJECT LI
 
 Users should be able to:
 
-- OBJECTIVE_1
-- OBJECTIVE_2
+- View the optimal layout for the component depending on their device's screen size
+- Navigate the slider using either their mouse/trackpad or keyboard
 
 ### Screenshot
 
@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [TO_BE_UPDATED](TO_BE_UPDATED)
+- Live Site URL: [https://kens-visuals.github.io/coding-bootcamp-testimonials-slider/](https://kens-visuals.github.io/coding-bootcamp-testimonials-slider/)
 - Solution URL: [TO_BE_UPDATED](TO_BE_UPDATED)
 
 ## My process
@@ -41,38 +41,16 @@ Users should be able to:
 - SCSS custom properties
 - CSS Flexbox
 - CSS Grid
+- Vanilla JS
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Believe it or not this was my first time building a slider. Whenever I'm going to build something for the first time, I always try to conquer the challenge by myself. I highly suggest you do the same, before jumping into YouTube or Google to find solutions. First, try to come up with a solution that just works, and doesn't matter how messy your JS looks at the moment. Next, try to refactor that messy code, so that when you need to work on that project again you can figure out what is what just in a glance. Lastly, if along the way you've come across a problem that you cannot solve by yourself, then try usin Google or YouTube to figure out what you did wrong. And trust me this simple process will help you a lot. If you're someone who's trying to come out of tutorial hell, then you should definelty stick to this routine. Otherwise, you'll always be watching others' videos on YouTube and copy paste their code from CodePen or GitHub repo.
 
 ### Useful resources
 
-- [TO_BE_UPDATED]() - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [TO_BE_UPDATED]() - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [JS Sliders](https://freefrontend.com/javascript-carousels/) - Here is some JS slider inspirations for your next project.
 
 ## Author
 
